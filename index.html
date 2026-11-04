@@ -3,19 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EFG: Escape from Gmod</title>
-	<meta name="description" content="EFG es un modo de extracción al estilo Escape from Tarkov para Garry's Mod, construido sobre Helix.">
+	<title>EFG: Escape from Gmod, modo de extracción para Garry's Mod</title>
+	<meta name="description" content="EFG es un modo de extracción al estilo Escape from Tarkov para Garry's Mod, construido sobre Helix. Prepara tu PMC, entra en raid, saquea y extrae.">
+	<meta name="theme-color" content="#1c1e1b">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://escapefromgmod.dpdns.org/">
 	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="EFG: Escape from Gmod">
+	<meta property="og:title" content="EFG: Escape from Gmod">
+	<meta property="og:description" content="Modo de extracción al estilo Escape from Tarkov para Garry's Mod. Prepara tu PMC, sobrevive, saquea y extrae.">
+	<meta property="og:url" content="https://escapefromgmod.dpdns.org/">
+	<meta property="og:locale" content="es_ES">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="EFG: Escape from Gmod">
+	<meta name="twitter:description" content="Modo de extracción al estilo Escape from Tarkov para Garry's Mod.">
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<a class="skip" href="#contenido">Saltar al contenido</a>
+
 	<header class="topbar">
-		<a class="brand" href="#inicio">EFG</a>
-		<nav class="menu">
-			<a href="#ciclo">Ciclo de juego</a>
+		<a class="brand" href="#inicio" aria-label="EFG, inicio">EFG<span>Escape from Gmod</span></a>
+		<nav class="menu" aria-label="Principal">
+			<a href="#ciclo">Ciclo</a>
+			<a href="#contenido-modo">Contenido</a>
 			<a href="#instalacion">Instalación</a>
-			<a href="#enlaces">Enlaces</a>
+			<a href="#preguntas">Preguntas</a>
 		</nav>
+		<a class="btn small" href="https://github.com/IosifStalin6773/EFG/releases/download/launcher-latest/SetupEFG.exe">Descargar</a>
 	</header>
 
 	<section class="hero" id="inicio">
@@ -24,15 +42,22 @@
 			<h1>Escape from Gmod</h1>
 			<p class="lead">Prepara a tu PMC en el escondite, entra en una raid, sobrevive, saquea y extrae. Si no llegas a tiempo, lo pierdes todo.</p>
 			<div class="actions">
-				<a class="btn primary" href="https://github.com/IosifStalin6773/EFG/releases/tag/launcher-latest">Descargar el launcher</a>
+				<a class="btn primary" href="https://github.com/IosifStalin6773/EFG/releases/download/launcher-latest/SetupEFG.exe">Descargar el launcher</a>
 				<a class="btn" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">Colección de Workshop</a>
 			</div>
+			<ul class="stats" aria-label="Datos del modo">
+				<li><strong>4</strong><span>bandos jugables</span></li>
+				<li><strong>10</strong><span>localizaciones</span></li>
+				<li><strong>8</strong><span>comerciantes</span></li>
+				<li><strong>5</strong><span>tipos de extracción</span></li>
+			</ul>
 		</div>
 	</section>
 
-	<main>
+	<main id="contenido">
 		<section class="section" id="ciclo">
 			<h2>El ciclo de juego</h2>
+			<p class="intro">Cada raid es un riesgo: lo que llevas puede quedarse contigo o perderse para siempre.</p>
 			<ol class="cycle">
 				<li>
 					<span class="step">01</span>
@@ -62,55 +87,87 @@
 			</ol>
 		</section>
 
-		<section class="section split">
-			<div>
-				<h2>Lo que hay dentro</h2>
-				<ul class="features">
-					<li><strong>Cuatro bandos</strong> USEC, BEAR, Scav y Staff, y Scav run con karma frente a Fence.</li>
-					<li><strong>Inventario en rejilla</strong> con TAB, contenedores seguros, alijo personal y seguro.</li>
-					<li><strong>Armas ARC9</strong> de EFT con modding en pantalla, cargadores, munición y desgaste.</li>
-					<li><strong>Economía</strong> en rublos, dólares y euros, con comerciantes, mercadillo y tareas.</li>
-					<li><strong>Escondite</strong> con fabricación por tiempo y módulos que desbloquean recetas.</li>
-				</ul>
+		<section class="section" id="contenido-modo">
+			<h2>Lo que hay dentro</h2>
+			<div class="grid">
+				<article class="feature">
+					<h3>Bandos y Scav run</h3>
+					<p>USEC y BEAR como PMC, Scav como bando de las Scav run y Staff para la administración. Las Scav run tienen espera y dependen de tu karma con Fence.</p>
+				</article>
+				<article class="feature">
+					<h3>Inventario en rejilla</h3>
+					<p>Un solo menú con TAB: casco, chaleco, mochila, contenedor seguro, bolsillos y alijo personal. Gira los objetos con R al arrastrarlos.</p>
+				</article>
+				<article class="feature">
+					<h3>Armas ARC9</h3>
+					<p>Armas de EFT con pantalla de modding al estilo del juego: ranuras, piezas compatibles y estadísticas en vivo. Cargadores y munición por calibre.</p>
+				</article>
+				<article class="feature">
+					<h3>Salud y fisiología</h3>
+					<p>Cabeza, tórax, estómago, brazos y piernas por separado. Sangrados, fracturas, sangre, tensión y reanimación.</p>
+				</article>
+				<article class="feature">
+					<h3>Economía</h3>
+					<p>Rublos, dólares y euros. Comerciantes con lealtad, reparación, mercadillo entre jugadores y seguro de equipo.</p>
+				</article>
+				<article class="feature">
+					<h3>Escondite</h3>
+					<p>Módulos que se mejoran con rublos y objetos, fabricación por tiempo y recetas que se desbloquean al subir de nivel.</p>
+				</article>
 			</div>
-			<aside class="note">
-				<p class="note-title">Estado del proyecto</p>
-				<p>EFG está en desarrollo. Casi todo está programado, pero aún se prueba en partida. Los valores de configuración marcados como pendientes de revisión salen de la wiki de EFT y se ajustarán.</p>
-			</aside>
 		</section>
 
 		<section class="section" id="instalacion">
 			<h2>Instalación</h2>
-			<ol class="steps">
-				<li>Descarga el launcher desde la sección de releases.</li>
-				<li>Suscríbete a la <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">colección de Workshop</a>. Trae los modelos, las armas ARC9, los mapas y los sonidos.</li>
-				<li>Instala Helix y el gamemode <code>escapefromgmod</code>. El launcher se encarga de los pasos.</li>
-				<li>Entra en el servidor y pulsa <kbd>TAB</kbd> para abrir el menú del jugador.</li>
-			</ol>
-			<p class="muted">Pendiente: añadir VJ Base a la colección, necesario para la IA.</p>
+			<div class="split">
+				<ol class="steps">
+					<li>Descarga el <a href="https://github.com/IosifStalin6773/EFG/releases/download/launcher-latest/SetupEFG.exe">launcher (SetupEFG.exe)</a>. Instala el modo y sus dependencias.</li>
+					<li>Suscríbete a la <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">colección de Workshop</a>. Trae modelos, armas ARC9, mapas y sonidos.</li>
+					<li>Arranca el servidor o únete a uno con el gamemode <code>escapefromgmod</code>.</li>
+					<li>Pulsa <kbd>TAB</kbd> en partida para abrir el menú del jugador y crear tu PMC.</li>
+				</ol>
+				<aside class="note">
+					<p class="note-title">Estado del proyecto</p>
+					<p>EFG está en desarrollo. Casi todo está programado, pero se sigue probando en partida. Los valores de configuración pendientes de revisión salen de la wiki de EFT y se ajustarán.</p>
+				</aside>
+			</div>
 		</section>
 
-		<section class="section" id="enlaces">
-			<h2>Enlaces</h2>
-			<div class="links">
-				<a class="card" href="https://github.com/IosifStalin6773/EFG/releases/tag/launcher-latest">
-					<span class="card-title">Launcher</span>
-					<span class="card-text">Última versión de SetupEFG.exe en las releases del proyecto.</span>
-				</a>
-				<a class="card" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">
-					<span class="card-title">Colección de Workshop</span>
-					<span class="card-text">Contenido necesario para jugar, en Steam.</span>
-				</a>
-				<a class="card" href="https://github.com/IosifStalin6773/EFG">
-					<span class="card-title">Código fuente</span>
-					<span class="card-text">El gamemode, las convenciones y la hoja de ruta.</span>
-				</a>
+		<section class="section" id="preguntas">
+			<h2>Preguntas frecuentes</h2>
+			<div class="faq">
+				<details>
+					<summary>¿Qué necesito para jugar?</summary>
+					<p>Garry's Mod con Helix en <code>garrysmod/gamemodes/helix</code>, el gamemode EFG y la colección de Workshop. Para la IA hace falta VJ Base, que todavía no está en la colección.</p>
+				</details>
+				<details>
+					<summary>¿Es un servidor o un modo para jugar en local?</summary>
+					<p>Funciona en un servidor dedicado o en un servidor de escucha. Los administradores tienen comandos para crear raids, zonas de IA, botín y comerciantes.</p>
+				</details>
+				<details>
+					<summary>¿Por qué pierdo el equipo al morir?</summary>
+					<p>Es el ciclo de EFT: lo que llevas se pierde salvo lo que aseguras y el contenedor seguro. Lo asegurado vuelve a tu alijo tras un tiempo.</p>
+				</details>
+				<details>
+					<summary>¿Dónde reporto errores o propongo cambios?</summary>
+					<p>En el <a href="https://github.com/IosifStalin6773/EFG/issues">repositorio del proyecto</a>. Las mejoras previstas están en la hoja de ruta del README.</p>
+				</details>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<p>EFG Project. Basado en <a href="https://github.com/nebulouscloud/helix">Helix</a>. Inspirado en <em>Escape from Tarkov</em> de Battlestate Games. Los modelos, armas y mapas de terceros pertenecen a sus autores.</p>
+		<div class="footer-inner">
+			<div>
+				<p class="brand-foot">EFG: Escape from Gmod</p>
+				<p class="muted">Mantenido por EFG Project. Basado en <a href="https://github.com/nebulouscloud/helix">Helix</a>. Inspirado en <em>Escape from Tarkov</em> de Battlestate Games. Los modelos, armas y mapas de terceros pertenecen a sus autores.</p>
+			</div>
+			<nav class="footer-links" aria-label="Enlaces">
+				<a href="https://github.com/IosifStalin6773/EFG">Código fuente</a>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">Workshop</a>
+				<a href="https://github.com/IosifStalin6773/EFG/releases/tag/launcher-latest">Releases</a>
+			</nav>
+		</div>
 	</footer>
 </body>
 </html>
