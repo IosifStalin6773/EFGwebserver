@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EFG: Escape from Gmod</title>
+	<meta name="description" content="EFG es un modo de extracción al estilo Escape from Tarkov para Garry's Mod, construido sobre Helix.">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="topbar">
+		<a class="brand" href="#inicio">EFG</a>
+		<nav class="menu">
+			<a href="#ciclo">Ciclo de juego</a>
+			<a href="#instalacion">Instalación</a>
+			<a href="#enlaces">Enlaces</a>
+		</nav>
+	</header>
+
+	<section class="hero" id="inicio">
+		<div class="hero-inner">
+			<p class="kicker">Modo de extracción para Garry's Mod</p>
+			<h1>Escape from Gmod</h1>
+			<p class="lead">Prepara a tu PMC en el escondite, entra en una raid, sobrevive, saquea y extrae. Si no llegas a tiempo, lo pierdes todo.</p>
+			<div class="actions">
+				<a class="btn primary" href="https://github.com/IosifStalin6773/EFG/releases/tag/launcher-latest">Descargar el launcher</a>
+				<a class="btn" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">Colección de Workshop</a>
+			</div>
+		</div>
+	</section>
+
+	<main>
+		<section class="section" id="ciclo">
+			<h2>El ciclo de juego</h2>
+			<ol class="cycle">
+				<li>
+					<span class="step">01</span>
+					<h3>Creación del PMC</h3>
+					<p>Elige bando (USEC o BEAR), apariencia, rol y equipo inicial. Un PMC por cuenta.</p>
+				</li>
+				<li>
+					<span class="step">02</span>
+					<h3>Escondite</h3>
+					<p>Compra a los comerciantes, mejora los módulos y asegura tu equipo antes de salir.</p>
+				</li>
+				<li>
+					<span class="step">03</span>
+					<h3>Raid</h3>
+					<p>Despliega en uno de los mapas de Tarkov con el reloj corriendo. Hasta cinco jugadores por grupo.</p>
+				</li>
+				<li>
+					<span class="step">04</span>
+					<h3>Supervivencia</h3>
+					<p>Salud por partes, sangrados, fracturas y fisiología. Scavs, PMC de IA y jefes te esperan.</p>
+				</li>
+				<li>
+					<span class="step">05</span>
+					<h3>Extracción</h3>
+					<p>Llega a una salida antes de que acabe el tiempo. Si no, quedas como MIA y pierdes lo no asegurado.</p>
+				</li>
+			</ol>
+		</section>
+
+		<section class="section split">
+			<div>
+				<h2>Lo que hay dentro</h2>
+				<ul class="features">
+					<li><strong>Cuatro bandos</strong> USEC, BEAR, Scav y Staff, y Scav run con karma frente a Fence.</li>
+					<li><strong>Inventario en rejilla</strong> con TAB, contenedores seguros, alijo personal y seguro.</li>
+					<li><strong>Armas ARC9</strong> de EFT con modding en pantalla, cargadores, munición y desgaste.</li>
+					<li><strong>Economía</strong> en rublos, dólares y euros, con comerciantes, mercadillo y tareas.</li>
+					<li><strong>Escondite</strong> con fabricación por tiempo y módulos que desbloquean recetas.</li>
+				</ul>
+			</div>
+			<aside class="note">
+				<p class="note-title">Estado del proyecto</p>
+				<p>EFG está en desarrollo. Casi todo está programado, pero aún se prueba en partida. Los valores de configuración marcados como pendientes de revisión salen de la wiki de EFT y se ajustarán.</p>
+			</aside>
+		</section>
+
+		<section class="section" id="instalacion">
+			<h2>Instalación</h2>
+			<ol class="steps">
+				<li>Descarga el launcher desde la sección de releases.</li>
+				<li>Suscríbete a la <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">colección de Workshop</a>. Trae los modelos, las armas ARC9, los mapas y los sonidos.</li>
+				<li>Instala Helix y el gamemode <code>escapefromgmod</code>. El launcher se encarga de los pasos.</li>
+				<li>Entra en el servidor y pulsa <kbd>TAB</kbd> para abrir el menú del jugador.</li>
+			</ol>
+			<p class="muted">Pendiente: añadir VJ Base a la colección, necesario para la IA.</p>
+		</section>
+
+		<section class="section" id="enlaces">
+			<h2>Enlaces</h2>
+			<div class="links">
+				<a class="card" href="https://github.com/IosifStalin6773/EFG/releases/tag/launcher-latest">
+					<span class="card-title">Launcher</span>
+					<span class="card-text">Última versión de SetupEFG.exe en las releases del proyecto.</span>
+				</a>
+				<a class="card" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">
+					<span class="card-title">Colección de Workshop</span>
+					<span class="card-text">Contenido necesario para jugar, en Steam.</span>
+				</a>
+				<a class="card" href="https://github.com/IosifStalin6773/EFG">
+					<span class="card-title">Código fuente</span>
+					<span class="card-text">El gamemode, las convenciones y la hoja de ruta.</span>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>EFG Project. Basado en <a href="https://github.com/nebulouscloud/helix">Helix</a>. Inspirado en <em>Escape from Tarkov</em> de Battlestate Games. Los modelos, armas y mapas de terceros pertenecen a sus autores.</p>
+	</footer>
+</body>
+</html>
