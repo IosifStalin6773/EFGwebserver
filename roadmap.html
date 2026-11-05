@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Roadmap: EFG, Escape from Gmod</title>
+	<meta name="description" content="Roadmap interactivo de EFG: lo hecho, lo que está en curso y lo que falta para la versión 1.0.">
+	<meta name="theme-color" content="#1c1e1b">
+	<link rel="canonical" href="https://escapefromgmod.dpdns.org/roadmap.html">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<meta property="og:title" content="Roadmap de EFG">
+	<meta property="og:description" content="Estado del proyecto y lo que falta para la versión 1.0.">
+	<meta property="og:url" content="https://escapefromgmod.dpdns.org/roadmap.html">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+	<a class="skip" href="#contenido">Saltar al contenido</a>
+
+	<header class="topbar">
+		<a class="brand" href="index.html" aria-label="EFG, inicio">EFG<span>Escape from Gmod</span></a>
+		<nav class="menu" aria-label="Principal">
+			<a href="index.html#ciclo">Ciclo</a>
+			<a href="index.html#contenido-modo">Contenido</a>
+			<a href="index.html#instalacion">Instalación</a>
+			<a href="roadmap.html" aria-current="page">Roadmap</a>
+		</nav>
+		<a class="btn small" href="https://github.com/IosifStalin6773/EFG/releases/download/launcher-latest/SetupEFG.exe">Descargar</a>
+	</header>
+
+	<main id="contenido" class="rm">
+		<header class="rm-head">
+			<p class="eyebrow">EFG · Escape from Gmod</p>
+			<h1>Roadmap del proyecto</h1>
+			<p class="lead">Estado a 3 de noviembre de 2026. Objetivo de la versión 1.0: un mapa, 24-32 jugadores y un wipe completo sin errores.</p>
+
+			<div class="rm-overall" aria-label="Progreso global">
+				<div class="rm-overall-top">
+					<span>Progreso global estimado</span>
+					<strong id="overall-pct">0%</strong>
+				</div>
+				<div class="bar bar-lg"><span id="overall-bar" style="width:0%"></span></div>
+				<p class="muted small">Porcentaje estimado a partir del código y de lo probado en partida.</p>
+			</div>
+		</header>
+
+		<section class="rm-controls" aria-label="Filtros">
+			<div class="chips" role="group" aria-label="Filtrar por estado">
+				<button class="chip is-on" data-filter="all" type="button">Todo</button>
+				<button class="chip" data-filter="done" type="button">Hecho</button>
+				<button class="chip" data-filter="wip" type="button">En curso</button>
+				<button class="chip" data-filter="todo" type="button">Pendiente</button>
+			</div>
+			<label class="search">
+				<span class="sr-only">Buscar en el roadmap</span>
+				<input id="search" type="search" placeholder="Buscar, por ejemplo: VJ Base" autocomplete="off">
+			</label>
+		</section>
+
+		<section class="rm-section" aria-labelledby="h-done">
+			<div class="rm-section-head">
+				<h2 id="h-done">Hecho</h2>
+				<span class="tag tag-done">Fusionado en main</span>
+			</div>
+			<div class="areas" id="areas-done"></div>
+		</section>
+
+		<section class="rm-section" aria-labelledby="h-wip">
+			<div class="rm-section-head">
+				<h2 id="h-wip">En curso</h2>
+				<span class="tag tag-wip">PR #96, sin probar</span>
+			</div>
+			<ul class="items" id="items-wip"></ul>
+			<p class="muted small">Falta fusionarlo y probarlo en partida. Después del #96 no hay más PR abiertos.</p>
+		</section>
+
+		<section class="rm-section" aria-labelledby="h-areas">
+			<div class="rm-section-head">
+				<h2 id="h-areas">Avance por área</h2>
+				<span class="tag tag-est">Estimación</span>
+			</div>
+			<div class="bars" id="bars"></div>
+		</section>
+
+		<section class="rm-section" aria-labelledby="h-plan">
+			<div class="rm-section-head">
+				<h2 id="h-plan">Pendiente para la 1.0</h2>
+			</div>
+			<ol class="timeline" id="timeline" aria-label="Fases"></ol>
+			<div class="phases" id="phases"></div>
+		</section>
+
+		<p class="muted small rm-foot">Fechas orientativas. Pulsa una fase para ver sus tareas; usa los filtros y el buscador para acotar la lista.</p>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-inner">
+			<div>
+				<p class="brand-foot">EFG: Escape from Gmod</p>
+				<p class="muted">Mantenido por EFG Project.</p>
+			</div>
+			<nav class="footer-links" aria-label="Enlaces">
+				<a href="index.html">Inicio</a>
+				<a href="https://github.com/IosifStalin6773/EFG">Código fuente</a>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3224545557">Workshop</a>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="roadmap.js"></script>
+</body>
+</html>
